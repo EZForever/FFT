@@ -80,6 +80,7 @@ void fft(fft_complex data[], int dataLen, int ifft) {
       data[i].imag /= dataLen;
     }
   }
+  free(W);
 }
 
 void fft2(fft_complex data[], int dataW, int dataH, int ifft) {
